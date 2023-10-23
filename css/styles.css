@@ -1,0 +1,198 @@
+/* Reset some default browser styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: black;
+}
+
+nav .logo {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav li a:hover {
+    background-color: purple;  /* Cool neon purple */
+}
+
+.intro {
+    padding: 50px;
+    text-align: center;
+    background-color: orange;  /* As a highlight */
+}
+
+.banner {
+    /* Placeholder for your banner image */
+    height: 400px;
+    background-color: #eee;  /* Temporary placeholder color */
+}
+
+
+/* Subpage styling */
+
+.subpage-title {
+    padding: 30px;
+    text-align: center;
+    background-color: purple; /* Cool neon purple */
+    color: white;
+}
+
+.work-showcase {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if the viewport is too narrow */
+}
+
+.work-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow to make images pop */
+}
+
+.work-item p {
+    margin-top: 10px;
+    color: orange; /* Highlighting the description */
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+body.dark-theme nav {
+    background-color: #333;
+}
+
+body.dark-theme .work-item {
+    border-color: neonpurple;
+}
+
+/* Gradient Button Styling */
+#themeToggle {
+    background: linear-gradient(90deg, neonpurple, orange); /* Replace neonpurple with your exact color */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#themeToggle:hover {
+    background: linear-gradient(90deg, orange, neonpurple); /* The gradient direction is reversed on hover */
+    box-shadow: 0 7px 20px rgba(neonpurple, 0.4); /* Give a glow effect using the neonpurple color */
+}
+
+#themeToggle:active {
+    transform: translateY(2px); /* Subtle push effect when the button is clicked */
+}
+
+/*FlexBox incorporation: */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* ... other styles ... */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;  /* Spacing between nav items */
+    /* ... other styles ... */
+}
+/* styles.css */
+
+.work-showcase {
+    display: flex;
+    justify-content: space-between;  /* Even spacing between items */
+    flex-wrap: wrap;  /* Allows items to wrap onto the next row if there isn't enough space */
+    gap: 20px;  /* Spacing between rows and items */
+}
+
+.work-item {
+    flex: 1 1 calc(33.333% - 20px);  /* Allows the item to grow and shrink while occupying about a third of the container's width (subtracting for the gap) */
+    /* ... other styles ... */
+}
+/* styles.css */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* Occupy full viewport height */
+    /* ... other styles ... */
+}
+/* styles.css */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+}
+
+footer .socials {
+    display: flex;
+    gap: 10px;
+}
+.logo {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: inherit; /* So that the link color matches the surrounding text */
+    border: 2px solid transparent; /* Add if you want a border around the logo */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.logo:hover {
+    background-color: rgba(255,255,255,0.1); /* A subtle hover effect */
+}
+.small-image {
+    width: 10%;  /* Image will take up 50% of its containing element's width */
+}
+.banner-image {
+    width: 100%;  /* Image will take up 50% of its containing element's width */
+    height: 100%;
+}
