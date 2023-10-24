@@ -7,44 +7,49 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   <!-- Navbar -->
-    <nav>
-        <a href="index.html" class="logo">NexaLimit - Golden/金面小仙</a>
-        <button id="themeToggle">Toggle Theme</button>
-        <ul>
-            <li><a href="Subpages/Robloxdev.html">Roblox Development</a></li>
-            <li><a href="Subpages/SocialMedia.html">Social Media</a></li>
-            <li><a href="Subpages/Arduino.html">Arduino</a></li>
-            <li><a href="Subpages/Java.html">Java</a></li>
-            <li><a href="Subpages/WebDev.html">Website Development</a></li>
-            <li><a href="Subpages/FTC.html">FTC</a></li>
-            <li><a href="Subpages/Other.html">Other</a></li>
-        </ul>
-    </nav>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">NexaLimit</a>
+            <button id="themeToggle" aria-label="Toggle Theme">Toggle Theme</button>
+        </nav>
+    </header>
 
-    <!-- Banner (placeholder) -->
+    <!-- Banner -->
     <section class="banner">
-        <img src="images/Banner.jpeg" alt="My avatar" class="banner-image">
-        <!-- Place your main banner image here -->
+        <img src="images/Banner.png" alt="My avatar" class="banner-image">
     </section>
 
-    <!-- Introduction (customize this) -->
-    <section class="intro">
-        <h1>Welcome to My Portfolio/workspace</h1>
-        <p>Hello everyone, this is where I display my projects. I take my username/nickname as Golden/金面小仙.</p>
-        <div class="work-item">
-            <img src="images/MyAvatarForSocialMediaV1 copy.PNG" alt="My avatar">
+    <!-- Introduction -->
+    <main>
+        <section class="intro">
+            <h1>NEXALIMIT</h1>
+            <div class="button-container">
+                <button class="portal portfolio" data-href="Portfolio.html">
+                    <div class="portal-content">Portfolio</div>
+                    <span>Golden</span>
+                </button>
+                
+                
+                <button class="portal podcast" data-href="Podcast.html">
+                    <div class="portal-content">Podcast</div>
+                    <span>Hosts: <br> Kevin Simone</span>
+                </button>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Golden </p>
+        <div class="socials">
+            <a href="#" aria-label="Twitter Profile">Twitter</a>
+            <a href="#" aria-label="LinkedIn Profile">LinkedIn</a>
+            <a href="#" aria-label="GitHub Repository">GitHub</a>
         </div>
-    </section>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>
 </html>
-<footer>
-    <p>&copy; Golden </p>
-    <div class="socials">
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-    </div>
-</footer>

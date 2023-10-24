@@ -1,0 +1,252 @@
+/* Reset and Global Styles */
+html {
+    font-size: 10px; /* Default base size; 1rem = 16px */
+}
+
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 3.125rem; /* Converted from px to rem */
+    background-color: black;
+}
+
+nav .logo {
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Converted from px to rem */
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav .logo:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.25rem; /* Converted from px to rem */
+    list-style-type: none;
+    position: relative;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.3125rem 0.625rem; /* Converted from px to rem */
+    border-radius: 0.3125rem; /* Converted from px to rem */
+    transition: background-color 0.3s;
+}
+
+nav li a:hover {
+    background-color: purple;
+}
+
+/* Dropdown menu */
+nav li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    border: 1px solid white;
+}
+
+nav li:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.submenu a:hover {
+    background-color: purple;
+}
+
+/* Introduction Styles */
+.intro {
+    padding: 3.125rem; /* Converted from px to rem */
+    text-align: center;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Banner Styles */
+.banner {
+    height: 48rem; /* Converted from px to rem */
+    background-color: #eee;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50rem;  /* Converted from px to rem */
+    margin: 0 auto;  /* Center the container */
+}
+
+/* Box-style Button with Neon Purple Color */
+/* Box-style Button with Neon Purple Color */
+.portal {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: calc(50% - 0.625rem);
+    height: 31.25rem;
+    line-height: 6.25rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.625rem;
+    margin: 0.3125rem;
+    background: #9400D3;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 0 0.625rem #9400D3;
+}
+
+.portal:hover {
+    background-color: #7300A0;  /* Darker tone on hover */
+}
+
+.portal-content, .portal span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portal-content {
+    z-index: 2;
+    transition: opacity 0.4s;
+}
+
+.portal span {
+    opacity: 0;
+    transition: opacity 0.4s, transform 0.4s;
+    color: white;
+}
+
+.portal:hover .portal-content {
+    opacity: 0;
+}
+
+.portal:hover span {
+    opacity: 1;
+}
+
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 3.125rem; /* Converted from px to rem */
+    background-color: black;
+    color: white;
+}
+
+footer .socials {
+    display: flex;
+    gap: 0.625rem; /* Converted from px to rem */
+}
+
+/* Utility and Miscellaneous Styles */
+.small-image {
+    width: 10%;
+}
+
+.work-showcase {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.25rem; /* Converted from px to rem */
+}
+
+.work-item {
+    flex: 1 1 calc(33.333% - 1.25rem); /* Converted from px to rem */
+    margin: 1.25rem; /* Converted from px to rem */
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 0.3125rem; /* Converted from px to rem */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.work-item p {
+    margin-top: 0.625rem; /* Converted from px to rem */
+    color: orange;
+}
+
+.portal-link {
+    display: inline-block;
+    text-decoration: none;  /* Remove the underline */
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+body.dark-theme nav {
+    background-color: #333;
+}
+
+body.dark-theme .work-item {
+    border-color: neonpurple;
+}
+
+/* Gradient Button Styling */
+#themeToggle {
+    background: linear-gradient(90deg, neonpurple, orange); /* Replace neonpurple with your exact color */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#themeToggle:hover {
+    background: linear-gradient(90deg, orange, neonpurple); /* The gradient direction is reversed on hover */
+    box-shadow: 0 7px 20px rgba(neonpurple, 0.4); /* Give a glow effect using the neonpurple color */
+}
+
+#themeToggle:active {
+    transform: translateY(2px); /* Subtle push effect when the button is clicked */
+}
