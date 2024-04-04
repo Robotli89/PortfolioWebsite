@@ -215,7 +215,7 @@ footer .socials {
 /* Dark theme styles */
 body.dark-theme {
     background-color: black;
-    color: white;
+    color: rosybrown;
 }
 
 body.dark-theme nav {
