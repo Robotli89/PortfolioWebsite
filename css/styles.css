@@ -178,6 +178,18 @@ footer .socials {
     gap: 0.625rem; /* Converted from px to rem */
 }
 
+/* social media item  */
+.socialMediaItem {
+    padding: 3.125rem; /* Converted from px to rem */
+    text-align: center;
+    background-color: rgba(255, 0, 64, 0.588);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 /* Utility and Miscellaneous Styles */
 .small-image {
     width: 10%;
