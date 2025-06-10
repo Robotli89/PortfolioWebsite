@@ -1,51 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work Showcase</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #content-wrapper {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 0;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Gallery styles */
+    #gallery {
+      text-align: center;
+    }
+    #gallery .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 0;
+      list-style: none;
+    }
+    #gallery .image-slot {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 5px;
+    }
+    #gallery .image-slot img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    #gallery .image-slot p {
+      margin: 8px 0 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-<div id="content-wrapper">
-  <header>
-    <h1>Graphic Designer Tiny Projects</h1>
-    <p>Scroll down to find some stuff</p>
-  </header>
 
-  <section id="videos">
-    <h2>ASMR Programming Videos</h2>
-    <!-- Embed a YouTube video here -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bDru0mnAMIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <a href="SUBPAGE_URL" class="button">Click Here</a>
-  </section>
+  <div id="content-wrapper">
+    <header>
+      <h1>Graphic Designer Tiny Projects</h1>
+      <p>Scroll down to find some stuff</p>
+    </header>
 
-  <section id="elementary-math">
-    <h2>Coding lessons</h2>
-    <!-- Your image for elementary math -->
-    <img src="PATH_TO_YOUR_IMAGE" alt="Java lesson 1">
-    <!-- Button to go to the elementary math subpage -->
-    <a href="ELEMENTARY_MATH_SUBPAGE_URL" class="button">Click Here</a>
-  </section>
-</div>
+    <section id="videos">
+      <h2>ASMR Programming Videos</h2>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/bDru0mnAMIM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      <br/>
+      <a href="SUBPAGE_URL" class="button">Click Here</a>
+    </section>
 
-<style>
-  body { font-family: Arial, sans-serif; }
-  #content-wrapper { max-width: 800px; margin: auto; }
-  header, section { text-align: center; margin-bottom: 20px; }
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  .button:hover {
-    background-color: #0056b3;
-  }
-</style>
+    <section id="coding-lessons">
+      <h2>Coding Lessons</h2>
+      <img src="PATH_TO_YOUR_IMAGE" alt="Java lesson 1" style="max-width:100%; height:auto;"/>
+      <br/>
+      <a href="ELEMENTARY_MATH_SUBPAGE_URL" class="button">Click Here</a>
+    </section>
+
+    <section id="gallery">
+      <h2>Project Gallery</h2>
+      <div class="gallery-grid">
+        <div class="image-slot">
+          <img src="placeholder1.jpg" alt="Project 1">
+          <p>Project Title 1</p>
+        </div>
+        <div class="image-slot">
+          <img src="placeholder2.jpg" alt="Project 2">
+          <p>Project Title 2</p>
+        </div>
+        <div class="image-slot">
+          <img src="placeholder3.jpg" alt="Project 3">
+          <p>Project Title 3</p>
+        </div>
+        <div class="image-slot">
+          <img src="placeholder4.jpg" alt="Project 4">
+          <p>Project Title 4</p>
+        </div>
+        <!-- Repeat .image-slot as many times as you need: -->
+        <div class="image-slot">
+          <img src="placeholder5.jpg" alt="Project 5">
+          <p>Project Title 5</p>
+        </div>
+        <div class="image-slot">
+          <img src="placeholder6.jpg" alt="Project 6">
+          <p>Project Title 6</p>
+        </div>
+        <div class="image-slot">
+          <img src="placeholder7.jpg" alt="Project 7">
+          <p>Project Title 7</p>
+        </div>
+        <div class="image-slot">
+          <img src="placeholder8.jpg" alt="Project 8">
+          <p>Project Title 8</p>
+        </div>
+      </div>
+    </section>
+  </div>
 
 </body>
 </html>
