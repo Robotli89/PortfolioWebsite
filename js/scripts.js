@@ -1,10 +1,13 @@
+// Smooth scrolling for internal anchor links if the target exists
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
@@ -38,11 +41,20 @@ document.querySelectorAll('.work-item img').forEach(img => {
     });
 });
 
+// Theme toggling with preference stored in localStorage
 const themeToggle = document.getElementById('themeToggle');
+if (themeToggle) {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+    }
 
-themeToggle.addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme');
-});
+    themeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-theme');
+        const isDark = document.body.classList.contains('dark-theme');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     var buttons = document.querySelectorAll('button[data-href]');
