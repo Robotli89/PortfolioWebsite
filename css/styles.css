@@ -235,12 +235,14 @@ body.dark-theme nav {
 }
 
 body.dark-theme .work-item {
-    border-color: neonpurple;
+    /* Highlight work items in dark mode with a vibrant purple border */
+    border: 0.125rem solid #9d00ff;
 }
 
 /* Gradient Button Styling */
 #themeToggle {
-    background: linear-gradient(90deg, neonpurple, orange); /* Replace neonpurple with your exact color */
+    /* Use a valid neon purple color for the gradient */
+    background: linear-gradient(90deg, #9d00ff, orange);
     border: none;
     border-radius: 25px;
     color: white;
@@ -255,8 +257,8 @@ body.dark-theme .work-item {
 }
 
 #themeToggle:hover {
-    background: linear-gradient(90deg, orange, neonpurple); /* The gradient direction is reversed on hover */
-    box-shadow: 0 7px 20px rgba(neonpurple, 0.4); /* Give a glow effect using the neonpurple color */
+    background: linear-gradient(90deg, orange, #9d00ff); /* The gradient direction is reversed on hover */
+    box-shadow: 0 7px 20px rgba(157, 0, 255, 0.4); /* Give a glow effect using the neon purple color */
 }
 
 #themeToggle:active {
